@@ -543,23 +543,24 @@ section { padding: 7rem 2rem; }
 }
 .entourage-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 2rem; max-width: 960px; margin: 3rem auto 0;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.2rem; max-width: 960px; margin: 2rem auto 0;
 }
 .entourage-card {
-  padding: 2rem 1.5rem;
+  padding: 1.2rem 1rem;
   background: var(--cream);
-  border-bottom: 2px solid var(--sage-pale);
+  border: 1.5px solid var(--sage-pale);
+  border-radius: 12px;
   transition: border-color 0.3s;
 }
 .entourage-card:hover { border-color: var(--sage-deep); }
 .entourage-role {
-  font-size: 0.55rem; letter-spacing: 0.3em; text-transform: uppercase;
-  color: var(--sage-deep); margin-bottom: 0.8rem;
+  font-size: 0.5rem; letter-spacing: 0.25em; text-transform: uppercase;
+  color: var(--sage-deep); margin-bottom: 0.5rem;
 }
 .entourage-name {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 1.1rem; color: var(--text-dark); line-height: 1.6;
+  font-size: 0.95rem; color: var(--text-dark); line-height: 1.5;
 }
 .entourage-section-title {
   font-family: 'Cormorant Garamond', serif;
@@ -777,7 +778,7 @@ footer {
   transition: border-color 0.3s, box-shadow 0.3s;
 }
 .entourage-card:hover {
-  box-shadow: 0 8px 28px rgba(138,170,138,0.18);
+  box-shadow: 0 6px 20px rgba(138,170,138,0.18);
 }
 
 /* ── ORNAMENT centered ── */
@@ -846,7 +847,7 @@ footer {
 <div id="intro">
   <div class="intro-ocean"><canvas id="oceanCanvas"></canvas></div>
   <div class="intro-content">
-    <div class="intro-tagline">Where sea breeze meets timeless love</div>
+    <div class="intro-tagline">🌊 Where sea breeze meets timeless love 🌴</div>
     <div class="intro-names">
       Jamie
       <span class="intro-ampersand">&amp;</span>
@@ -865,6 +866,7 @@ footer {
     <li><a href="#program">Program</a></li>
     <li><a href="#entourage">Entourage</a></li>
     <li><a href="#dresscode">Attire</a></li>
+    <li><a href="#menu">Menu</a></li>
     <li><a href="#gifts">Gifts</a></li>
     <li><a href="#rsvp">RSVP</a></li>
   </ul>
@@ -886,11 +888,11 @@ footer {
       <span class="hero-and">&amp;</span>
       Queen
     </div>
-    <div class="hero-tagline">Where sea breeze meets timeless love</div>
+    <div class="hero-tagline">🌊 Where sea breeze meets timeless love 🌴</div>
     <div class="hero-date-block">
       <div class="hero-date">Sunday, June 8, 2026</div>
       <div class="hero-divider-line"></div>
-      <div class="hero-venue">Costabella Tropical Beach Hotel · Mactan Island, Cebu</div>
+      <div class="hero-venue">🏖️ Costabella Tropical Beach Hotel · Mactan Island, Cebu</div>
     </div>
   </div>
   <div class="hero-scroll">
@@ -909,8 +911,8 @@ footer {
 
 <!-- ── COUNTDOWN ── -->
 <section id="countdown-section">
-  <div class="countdown-eyebrow">The big day is almost here</div>
-  <div class="countdown-title">Counting Down to Forever</div>
+  <div class="countdown-eyebrow">🌊 The big day is almost here 🌊</div>
+  <div class="countdown-title">Counting Down to Forever 🐚</div>
   <div class="countdown-grid">
     <div class="count-item">
       <span class="count-num" id="days">00</span>
@@ -950,14 +952,14 @@ footer {
       <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
         <rect x="3" y="4" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="16" y1="2" x2="16" y2="6"/>
       </svg>
-      <h3>Ceremony</h3>
+      <h3>Ceremony 🌊</h3>
       <p>Sunday, June 8, 2026<br>4:00 PM<br><br>Costabella Tropical Beach Hotel<br>Mactan Island, Buyong Rd<br>Lapu-Lapu, 6015 Cebu</p>
     </div>
     <div class="detail-card reveal">
       <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
         <circle cx="12" cy="10" r="3"/><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
       </svg>
-      <h3>Venue</h3>
+      <h3>Venue 🏖️</h3>
       <p>Costabella Tropical Beach Hotel<br><br>
         <a href="https://maps.app.goo.gl/swXbhBNBwvPjJKF78?g_st=ac" target="_blank">View on Google Maps ↗</a>
       </p>
@@ -967,16 +969,22 @@ footer {
         <path d="M12 2C8.5 2 5.5 4.5 5.5 8c0 3.5 6.5 14 6.5 14s6.5-10.5 6.5-14C18.5 4.5 15.5 2 12 2z"/>
         <circle cx="12" cy="8" r="2"/>
       </svg>
-      <h3>Reception</h3>
+      <h3>Reception 🌅</h3>
       <p>Same as Ceremony<br><br>Cocktail Hour: 5:30 PM<br>Reception: 6:00 PM onwards<br>Send-off: 9:00 PM</p>
     </div>
+  </div>
+
+  <!-- Venue Photo -->
+  <div class="reveal" style="max-width:860px; margin:3rem auto 0; border-radius:14px; overflow:hidden; border:1px solid var(--sage-pale); box-shadow:0 12px 40px rgba(106,143,106,0.13);">
+    <img src="venue.jpg" alt="Costabella Tropical Beach Hotel" style="width:100%; height:auto; display:block; object-fit:cover; max-height:460px;">
+    <p style="font-size:0.62rem; letter-spacing:0.25em; color:var(--text-light); text-transform:uppercase; text-align:center; padding:0.9rem; background:var(--cream);">🌴 Costabella Tropical Beach Hotel · Mactan Island, Cebu 🌊</p>
   </div>
 </section>
 
 <!-- ── PARALLAX QUOTE BAND ── -->
 <div class="parallax-band">
   <blockquote>
-    "Where sea breeze meets timeless love — two souls becoming one at the edge of the sea."
+    "🌊 Where sea breeze meets timeless love — two souls becoming one at the edge of the sea. 🌴"
     <cite>Jamie &amp; Queen · June 8, 2026</cite>
   </blockquote>
 </div>
@@ -1055,14 +1063,22 @@ footer {
     </div>
 
     <div class="entourage-section-title reveal">Principal Sponsors</div>
-    <div class="entourage-grid" style="max-width:500px; margin: 0 auto;">
+    <div class="entourage-grid" style="max-width:320px; margin: 0 auto;">
       <div class="entourage-card reveal">
-        <div class="entourage-role">Veil &amp; Cord</div>
-        <div class="entourage-name">Mrs. Jelly Gomez-Go<br>Mr. Loui Codeñera Repollo</div>
+        <div class="entourage-role">Principal Sponsors</div>
+        <div class="entourage-name">Mrs. Berna Lama<br>Mr. Max Lama</div>
+      </div>
+    </div>
+
+    <div class="entourage-section-title reveal">Secondary Sponsors</div>
+    <div class="entourage-grid" style="max-width:600px; margin: 0 auto;">
+      <div class="entourage-card reveal">
+        <div class="entourage-role">Cord</div>
+        <div class="entourage-name">Jelly &amp; Loui Tundag</div>
       </div>
       <div class="entourage-card reveal">
-        <div class="entourage-role">Secondary Sponsors</div>
-        <div class="entourage-name">Mr. Max Lama<br>Mrs. Berna Lama</div>
+        <div class="entourage-role">Veil</div>
+        <div class="entourage-name">Luigie Paradiang<br>&amp; Jeah Jarabejo</div>
       </div>
     </div>
 
@@ -1111,7 +1127,7 @@ footer {
 <!-- ── DRESS CODE ── -->
 <section id="dresscode">
   <div style="text-align:center; max-width:700px; margin:0 auto;">
-    <span class="section-label reveal">Come as you are</span>
+    <span class="section-label reveal">Come as you are 🌺</span>
     <h2 class="section-title reveal">Dress Code</h2>
     <div class="ornament reveal">
       <div class="ornament-line"></div>
@@ -1147,10 +1163,6 @@ footer {
         <div class="swatch-circle" style="background:#c9a96e;"></div>
         <span class="swatch-label">Champagne</span>
       </div>
-      <div class="swatch">
-        <div class="swatch-circle" style="background:#f5f0e8;"></div>
-        <span class="swatch-label">Ivory</span>
-      </div>
     </div>
 
     <p class="dress-note reveal">
@@ -1168,6 +1180,16 @@ footer {
     <!-- Dress code photo -->
     <div class="dresscode-photo reveal">
       <img src="attire.png" alt="Dress Code Inspiration" class="dresscode-photo-img">
+    </div>
+
+    <!-- Good to Know -->
+    <div class="reveal" style="margin-top:2.5rem; background:rgba(220,232,220,0.3); border:1px solid var(--sage-pale); border-radius:12px; padding:2rem 1.8rem; max-width:520px; margin-left:auto; margin-right:auto; text-align:left;">
+      <p style="font-family:'Cormorant Garamond',serif; font-size:1.15rem; color:var(--text-dark); text-align:center; margin-bottom:1.2rem; letter-spacing:0.08em;">✦ Good to Know ✦</p>
+      <p class="dress-note" style="margin:0; line-height:2.2;">
+        🌿 <strong>The ceremony & reception are held outdoors on a beach.</strong> The venue is on sand — please skip the stilettos or super high heels! Wedge heels, block heels, sandals, or dressy flats are your best friends for comfort and style on sandy ground.<br><br>
+        🌞 <strong>Bring a mini fan</strong> — it's June in Cebu and it will be warm, especially during the outdoor ceremony. Your future self will thank you!<br><br>
+        🧴 <strong>Pack sunscreen</strong> — the beachside ceremony starts at 4:00 PM and the sun can still be quite strong. A quick layer before you arrive goes a long way.
+      </p>
     </div>
   </div>
 </section>
@@ -1189,6 +1211,54 @@ footer {
       However, should you wish to honour us further, monetary gifts to help us begin our new chapter together are deeply appreciated and warmly welcomed.
     </p>
     <p class="gift-note">✦ &nbsp; Your love and blessings mean the world to us &nbsp; ✦</p>
+  </div>
+</section>
+
+<!-- ── MENU / FOOD SECTION ── -->
+<section id="menu" style="background:var(--warm-white); text-align:center; padding:5rem 2rem;">
+  <div style="max-width:700px; margin:0 auto;">
+    <span class="section-label reveal">Dining Together</span>
+    <h2 class="section-title reveal">The Menu 🌿</h2>
+    <div class="ornament reveal">
+      <div class="ornament-line"></div>
+      <span style="color:var(--gold); font-size:1.2rem;">✦</span>
+      <div class="ornament-line"></div>
+    </div>
+
+    <div class="reveal" style="background:rgba(220,232,220,0.35); border:1px solid var(--sage-pale); border-radius:12px; padding:1.5rem 2rem; margin-bottom:2rem;">
+      <p style="font-family:'Cormorant Garamond',serif; font-size:1.1rem; font-style:italic; color:var(--sage-deep); line-height:1.8;">
+        🥗 Our celebration dinner is <strong>fully plant-based</strong> — a thoughtfully curated vegan menu with no meat, no fish, and no animal products. We promise it will be delicious! Please come with an open palate and a curious heart. 🌱
+      </p>
+    </div>
+
+    <div class="reveal" style="text-align:left; max-width:520px; margin:0 auto;">
+
+      <p style="font-size:0.55rem; letter-spacing:0.35em; text-transform:uppercase; color:var(--sage-deep); margin-bottom:0.8rem;">🥗 Starters &amp; Salads</p>
+      <p style="font-size:0.8rem; line-height:2.2; color:var(--text-mid); margin-bottom:1.5rem; padding-left:1rem; border-left:2px solid var(--sage-pale);">
+        Pomelo Citrus Salad (greens &amp; nuts) 🍋<br>
+        Vegetable Salad Bar — all plant-based dressings 🥬<br>
+        Fried Vegetable Lumpia 🥟<br>
+        Vegetarian Maki (cucumber, mango, avocado) 🍣
+      </p>
+
+      <p style="font-size:0.55rem; letter-spacing:0.35em; text-transform:uppercase; color:var(--sage-deep); margin-bottom:0.8rem;">🍽️ Main Courses</p>
+      <p style="font-size:0.8rem; line-height:2.2; color:var(--text-mid); margin-bottom:1.5rem; padding-left:1rem; border-left:2px solid var(--sage-pale);">
+        Vegan Kare-Kare (tofu, eggplant, beans &amp; peanut sauce) 🥜<br>
+        Grilled Tofu &amp; Vegetables with Sambal 🌶️<br>
+        Crispy Tofu or Cauliflower 🥦<br>
+        Pad Thai — vegan version (no egg, no fish sauce) 🍜<br>
+        Steamed White Rice 🍚
+      </p>
+
+      <p style="font-size:0.55rem; letter-spacing:0.35em; text-transform:uppercase; color:var(--sage-deep); margin-bottom:0.8rem;">🍮 Dessert</p>
+      <p style="font-size:0.8rem; line-height:2.2; color:var(--text-mid); margin-bottom:1.5rem; padding-left:1rem; border-left:2px solid var(--sage-pale);">
+        Fresh Fruits (Watermelon &amp; Pineapple) 🍉🍍<br>
+        Vegan Coffee Jelly ☕<br>
+        Coconut Cream Fruit Salad (dairy-free) 🥥<br>
+        Turon (banana &amp; jackfruit) 🍌<br>
+        One round of soda 🥤
+      </p>
+    </div>
   </div>
 </section>
 
@@ -1232,8 +1302,8 @@ footer {
 <!-- ── FOOTER ── -->
 <footer>
   <div class="footer-names">Jamie &amp; Queen</div>
-  <div class="footer-tagline">Where sea breeze meets timeless love</div>
-  <div class="footer-date">June 8, 2026 · Costabella Tropical Beach Hotel · Mactan Island, Cebu</div>
+  <div class="footer-tagline">🌊 Where sea breeze meets timeless love 🌴</div>
+  <div class="footer-date">🐚 June 8, 2026 · Costabella Tropical Beach Hotel · Mactan Island, Cebu 🐚</div>
 </footer>
 
 <script>
