@@ -465,14 +465,12 @@ nav.scrolled .nav-links a { color: var(--text-mid); }
 .strip-row.ltr2 { animation: stripLTR 44s linear infinite; }
 .strip-img {
   object-fit: cover; flex-shrink: 0;
-  filter: saturate(0.2) brightness(0.93) contrast(0.96);
-  transition: filter 0.45s ease, transform 0.35s ease, box-shadow 0.35s ease;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
   display: block;
   cursor: pointer;
   border-radius: 4px;
 }
 .strip-img:hover {
-  filter: saturate(1.2) brightness(1.06) contrast(1.03);
   transform: scale(1.06);
   z-index: 3; position: relative;
   box-shadow: 0 12px 40px rgba(0,0,0,0.3);
